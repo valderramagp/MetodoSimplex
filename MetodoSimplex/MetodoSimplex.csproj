@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\FuncionObjetivo.cs" />
+    <Compile Include="Models\MatrizIdentidad.cs" />
+    <Compile Include="Models\Restriccion.cs" />
+    <Compile Include="Models\Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
