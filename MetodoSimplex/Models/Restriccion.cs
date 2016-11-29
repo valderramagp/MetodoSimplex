@@ -10,11 +10,11 @@ namespace MetodoSimplex.Models
     {
         public Restriccion()
         {
-            this.variables = new List<int>();
+            this.variables = new List<decimal>();
         }
 
-        public List<int> variables { get; set; }
-        public int solucion { get; set; }
-        public int operSolucion { get; set; }
+        public List<decimal> variables { get; set; }
+        public decimal solucion { get; set; }
+        public decimal operSolucion { get; set; }
     }
 }

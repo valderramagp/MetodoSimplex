@@ -8,29 +8,41 @@ namespace MetodoSimplex.Models
 {
     public static class Utils
     {
-        public static int leerInt()
+        public static decimal leerNumero()
         {
 
-            int result = 0;
-            var success = Int32.TryParse(Console.ReadLine(), out result);
+            decimal result = 0;
+            var success = Decimal.TryParse(Console.ReadLine(), out result);
             if (!success)
             {
                 Console.WriteLine("Por favor ingrese un valor válido");
-                result = leerInt();
+                result = leerNumero();
             }
             return result;
         }
 
-        public static int leerVarHolgura()
+        public static decimal leerVarHolgura()
         {
 
-            var variable = leerInt();
+            var variable = leerNumero();
             if (variable > 2 || variable < 1)
             {
                 Console.WriteLine("Ingresa 1 o 2");
                 variable = leerVarHolgura();
             }
             return variable;
+        }
+
+        public static int leerNumeroEntero()
+        {
+            int result = 0;
+            var success = Int32.TryParse(Console.ReadLine(), out result);
+            if (!success)
+            {
+                Console.WriteLine("Por favor ingrese un valor válido");
+                result = leerNumeroEntero();
+            }
+            return result;
         }
     }
 }

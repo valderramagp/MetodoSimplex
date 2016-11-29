@@ -10,11 +10,11 @@ namespace MetodoSimplex.Models
     {
         public FuncionObjetivo()
         {
-            this.variables = new List<int>();
-            this.igualada = new List<int>();
+            this.variables = new List<decimal>();
+            this.igualada = new List<decimal>();
         }
 
-        public List<int> variables { get; set; }
-        public List<int> igualada { get; set; }
+        public List<decimal> variables { get; set; }
+        public List<decimal> igualada { get; set; }
     }
 }
